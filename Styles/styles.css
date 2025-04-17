@@ -1,0 +1,177 @@
+body{
+	background:rebeccapurple;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.projects-main-container{
+	display: flex;
+	justify-content: space-between;
+}
+.project-container{
+	border: solid 1px;
+	padding: 100px;
+	background-color: lightblue;
+	 border-radius: 8px;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	  transition: all 0.3s ease;
+}
+.project-container:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    background-color: #e8f4f8;
+}
+.project-container h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 24px;
+}
+.project-container {
+    border: solid 1px rgba(255, 255, 255, 0.2); /* Soft white border */
+    padding: 40px;
+    background: linear-gradient(135deg, #6e7cfc, #2a3e84); /* Cool gradient background */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deep shadow for a 3D look */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    color: #fff; /* White text for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.project-container h1 {
+    font-size: 28px; /* Larger heading */
+    text-transform: uppercase; /* Makes the heading more bold and striking */
+    letter-spacing: 2px; /* Spacing between letters for a sleek look */
+}
+
+.project-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    opacity: 0.85; /* Slight transparency for text */
+}
+
+.project-container:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Bigger shadow when hovered */
+    background: linear-gradient(135deg, #2a3e84, #6e7cfc); /* Reversed gradient for hover effect */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Glow animation */
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(102, 126, 255, 0.8), 0 0 30px rgba(102, 126, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(102, 126, 255, 1), 0 0 50px rgba(102, 126, 255, 0.9);
+    }
+}
+.project-container {
+    perspective: 1000px;
+}
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+}
+.project-container {
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    background: linear-gradient(135deg, #6e7cfc, #2a3e84);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInSlideUp 1s ease-out, glow 1.5s ease-in-out infinite alternate;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project-container h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2a3e84, #6e7cfc);
+}
+
+/* Keyframes for fade-in, slide-up, and glow */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(102, 126, 255, 0.8), 0 0 30px rgba(102, 126, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(102, 126, 255, 1), 0 0 50px rgba(102, 126, 255, 0.9);
+    }
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the items */
+    padding: 20px 40px; /* Add some padding for spacing */
+    background: linear-gradient(90deg, #6e7cfc, #2a3e84); /* Gradient background */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.nav-bar .logo {
+    font-size: 30px; /* Larger font size for the logo */
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase; /* All caps for a clean, modern style */
+}
+
+.nav-bar .menu {
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+.nav-bar .menu a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Medium font size for navigation items */
+    font-weight: 500;
+    text-transform: uppercase; /* Clean, modern all-caps style */
+    padding: 10px 15px; /* Add padding to create clickable areas */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effects for menu items */
+.nav-bar .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background change on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active link effect */
+.nav-bar .menu a.active {
+    background-color: rgba(102, 126, 255, 0.3); /* Highlight active link */
+    transform: scale(1.1); /* Slightly enlarge active item */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center the text */
+    }
+
+    .nav-bar .menu {
+        flex-direction: column; /* Stack the menu items */
+        gap: 15px; /* Reduce space between items */
+    }
+}
